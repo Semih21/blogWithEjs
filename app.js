@@ -52,8 +52,7 @@ posts.forEach(function(post){
   //storedTitle.toLowerCase()
   if(storedTitle===requestedTitle){
     console.log("match found")
-  }else{
-    console.log("Not a match")
+    res.render('post',{title:post.title,content:post.content})
   }
 })
   
